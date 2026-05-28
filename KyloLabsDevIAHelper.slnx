@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KyloLabsDevIAHelper.Core/KyloLabs.DevIAHelper.Core.csproj" />
+  <Project Path="KyloLabsDevIAHelper/KyloLabs.DevIAHelper.Console.csproj" />
+</Solution>

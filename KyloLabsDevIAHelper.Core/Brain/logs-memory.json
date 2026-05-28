@@ -1,0 +1,22 @@
+﻿{
+  "Logs": [
+    {
+      "Timestamp": "2024-06-01T12:00:00Z",
+      "Level": "Information",
+      "Message": "Application started successfully.",
+      "Source": "KyloLabsDevIAHelper.Core"
+    },
+    {
+      "Timestamp": "2024-06-01T12:05:00Z",
+      "Level": "Warning",
+      "Message": "Low disk space detected.",
+      "Source": "KyloLabsDevIAHelper.Core"
+    },
+    {
+      "Timestamp": "2024-06-01T12:10:00Z",
+      "Level": "Error",
+      "Message": "Failed to connect to the database.",
+      "Source": "KyloLabsDevIAHelper.Core"
+    }
+  ]
+}

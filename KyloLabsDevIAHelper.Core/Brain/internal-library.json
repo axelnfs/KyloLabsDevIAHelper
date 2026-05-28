@@ -1,0 +1,19 @@
+﻿{
+  "internal_library": {
+    "languages": [
+      {
+        "name": "Dart",
+        "description": "Dart is an object-oriented language ",
+        "md_path": "library/dart_base.md",
+        "frameworks": [
+          {
+            "name": "Flutter",
+            "description": "Flutter is an open-source UI SDK",
+            "md_path": "library/frameworks/flutter_bloc.md"
+          }
+        ]
+      }
+    ]
+  }
+}
+

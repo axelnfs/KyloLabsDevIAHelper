@@ -1,0 +1,14 @@
+﻿{
+    "jokes": [
+        {
+            "Timestamp": "2024-06-01T12:00:00Z",
+            "Message": "Había una vez un perro llamado pegamento, se pegó y se murió.",
+            "Source": "KyloLabsDevIAHelper.Core"
+        },
+        {
+            "Timestamp": "2024-06-01T12:00:00Z",
+            "Message": "Había una vez un perro llamado pegamento, este no se pegó porque traía tapa",
+            "Source": "KyloLabsDevIAHelper.Core"
+        }
+    ]
+}

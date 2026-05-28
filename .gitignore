@@ -1,0 +1,5 @@
+KyloLabsDevIAHelper/bin/
+KyloLabsDevIAHelper.Core/bin/
+KyloLabsDevIAHelper/obj/Debug/
+KyloLabsDevIAHelper.Core/obj/Debug/
+Models/qwen2.5-coder-7b-instruct-q3_k_m.gguf

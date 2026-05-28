@@ -1,0 +1,6 @@
+@KyloLabsDevIAHelper_HostAddress = http://localhost:5023
+
+GET {{KyloLabsDevIAHelper_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

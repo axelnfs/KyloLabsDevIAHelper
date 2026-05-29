@@ -1,0 +1,14 @@
+﻿{
+  "context-memory": [
+    {
+      "context-memory-id": "1",
+      "timestamp": "2024-06-01T12:00:00Z",
+      "text": "Prueba de contexto 1, Axel escribio esto a mano"
+    },
+    {
+      "context-memory-id": "2",
+      "timestamp": "2024-06-01T12:00:00Z",
+      "text": "Prueba de contexto 1, Axel escribio esto a mano de nuevo y sin mi permiso, que tremendo mi creador"
+    }
+  ]
+}

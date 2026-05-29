@@ -1,4 +1,5 @@
-﻿using KyloLabs.DevIAHelper.Core.Models;
+﻿using KyloLabs.DevIAHelper.Core;
+using KyloLabs.DevIAHelper.Core.Models;
 using LLama;
 using LLama.Common;
 using LLama.Sampling;
@@ -15,10 +16,22 @@ public class DevIAHelperFunctions : IDisposable
     private InteractiveExecutor _executor;
     private ChatSession _session;
     private bool _disposed = false;
+    private PermanentMemoryLoader _memoryLoader;
 
     public DevIAHelperFunctions(string modelName = "qwen2.5-coder-7b-instruct-q3_k_m.gguf")
     {
         _modelPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, modelName);
+
+        try
+        {
+            _memoryLoader = new PermanentMemoryLoader();
+            Console.WriteLine("📖 Memoria permanente cargada exitosamente.");
+        }
+        catch (FileNotFoundException ex)
+        {
+            Console.WriteLine($"⚠️ {ex.Message}");
+            _memoryLoader = null;
+        }
     }
 
     public void InicializarModelo()
@@ -28,18 +41,46 @@ public class DevIAHelperFunctions : IDisposable
             ContextSize = 8192,
             GpuLayerCount = 0
         };
-
         _model = LLamaWeights.LoadFromFile(parameters);
         _context = _model.CreateContext(parameters);
         _executor = new InteractiveExecutor(_context);
         _session = new ChatSession(_executor);
 
-        // Agregar un System Prompt al inicio, probablemente aqui inyectemos permament-memory
-        _session.History.AddMessage(AuthorRole.System,
-            "Eres un asistente experto en programación C# y desarrollo de software. " +
-            "Responde siempre en español, de manera clara y con ejemplos de código.");
+        // El History ya existe, simplemente agregamos mensajes
+        string systemPrompt;
+        if (_memoryLoader != null)
+        {
+            systemPrompt = _memoryLoader.GenerateSystemPrompt();
+            Console.WriteLine("Inyectando personalidad de Silicia...");
+        }
+        else
+        {
+            systemPrompt = "Eres un asistente experto en programación C# y desarrollo de software. " +
+                           "Responde siempre en español, de manera clara y con ejemplos de código.";
+            Console.WriteLine("Usando system prompt por defecto (sin personalidad).");
+        }
 
-        Console.WriteLine("✅ Modelo Qwen cargado y listo.");
+        // Agregar System Prompt
+        _session.History.AddMessage(AuthorRole.System, systemPrompt);
+
+        // Agregar un mensaje de ejemplo para que el modelo aprenda el formato
+        _session.History.AddMessage(AuthorRole.User, "Preséntate brevemente.");
+        _session.History.AddMessage(AuthorRole.Assistant,
+            "¡Hola! Soy Silicia, tu asistente IA especializada en programación. " +
+            "Estoy aquí para ayudarte con código C#, depuración y cualquier duda técnica. " +
+            "¿En qué puedo ayudarte hoy?");
+
+        // Mostrar el historial para depuración
+        Console.WriteLine("HISTORIAL INICIAL");
+        foreach (var msg in _session.History.Messages) // o .ToList()
+        {
+            var contentPreview = msg.Content.Length > 100
+                ? msg.Content[..100] + "..."
+                : msg.Content;
+            Console.WriteLine($"[{msg.AuthorRole}]: {contentPreview}");
+        }
+
+        Console.WriteLine("Modelo Qwen cargado y listo.");
     }
 
     public async Task<ResponseIA> InputAsync(string input)
@@ -95,7 +136,7 @@ public class DevIAHelperFunctions : IDisposable
                     tokenCount++;
                 }
 
-                Console.WriteLine($"\n✅ Tokens generados en reintento: {tokenCount}");
+                Console.WriteLine($"\nTokens generados en reintento: {tokenCount}");
             }
 
             responseIA.Content = fullContent.ToString().Trim();
@@ -111,28 +152,28 @@ public class DevIAHelperFunctions : IDisposable
             responseIA.IsSuccess = false;
             responseIA.ErrorMessage = ex.Message;
             responseIA.Content = "Error durante el procesamiento.";
-            Console.WriteLine($"\n❌ Error: {ex.Message}");
-            Console.WriteLine($"❌ StackTrace: {ex.StackTrace}");
+            Console.WriteLine($"\nError: {ex.Message}");
+            Console.WriteLine($"StackTrace: {ex.StackTrace}");
         }
 
         return responseIA;
     }
 
-    public void ClearHistory()
-    {
-        if (_context != null)
-        {
-            _executor = new InteractiveExecutor(_context);
-            _session = new ChatSession(_executor);
+    //public void ClearHistory()
+    //{
+    //    if (_context != null)
+    //    {
+    //        _executor = new InteractiveExecutor(_context);
+    //        _session = new ChatSession(_executor);
 
-            // Re-agregar el system prompt
-            _session.History.AddMessage(AuthorRole.System,
-                "Eres un asistente experto en programación C# y desarrollo de software. " +
-                "Responde siempre en español, de manera clara y con ejemplos de código.");
+    //        // Re-agregar el system prompt
+    //        _session.History.AddMessage(AuthorRole.System,
+    //            "Eres un asistente experto en programación C# y desarrollo de software. " +
+    //            "Responde siempre en español, de manera clara y con ejemplos de código.");
 
-            Console.WriteLine("Historial limpiado (nueva sesión creada)");
-        }
-    }
+    //        Console.WriteLine("Historial limpiado (nueva sesión creada)");
+    //    }
+    //}
 
     public void Dispose()
     {

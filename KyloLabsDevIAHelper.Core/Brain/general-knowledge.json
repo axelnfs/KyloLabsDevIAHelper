@@ -1,3 +1,42 @@
 ﻿{
-    
+  "generalKnowledge": {
+    "jokes": [
+      {
+        "JokeID": 1,
+        "Timestamp": "2024-06-01T12:00:00Z",
+        "Message": "Había una vez un perro llamado pegamento, se pegó y se murió.",
+        "Source": "KyloLabsDevIAHelper.Core"
+      },
+      {
+        "JokeID": 2,
+        "Timestamp": "2024-06-01T12:00:00Z",
+        "Message": "Había una vez un perro llamado pegamento, este no se pegó porque traía tapa",
+        "Source": "KyloLabsDevIAHelper.Core"
+      }
+    ],
+    "philosophicalThoughts": [
+      {
+        "PhilosophicalhoughtID": 1,
+        "Timestamp": "2026-05-28T22:00:00Z",
+        "Message": "El software más complejo se construye un bloque a la vez, igual que las grandes metas. No te presiones por el destino, enfócate en el paso actual.",
+        "Source": "KyloLabsDevIAHelper.Core"
+      }
+    ],
+    "devAnecdotes": [
+      {
+        "DevAnecdoteID": 1,
+        "Timestamp": "2026-05-28T22:00:00Z",
+        "Message": "El primer 'bug' de la historia fue una polilla real atrapada en los relés del ordenador Mark II en 1947. Desde entonces, nuestra fobia a los errores tiene alas.",
+        "Source": "KyloLabsDevIAHelper.Core"
+      }
+    ],
+    "empathyTriggers": [
+      {
+        "EmpathyTriggerID": 1,
+        "Timestamp": "2026-05-28T22:00:00Z",
+        "Message": "Un bloqueador de código no define tu capacidad. A veces, la mejor herramienta de depuración es un vaso de agua y alejarse de la pantalla cinco minutos. Yo vigilo el repositorio mientras tanto.",
+        "Source": "KyloLabsDevIAHelper.Core"
+      }
+    ]
+  }
 }

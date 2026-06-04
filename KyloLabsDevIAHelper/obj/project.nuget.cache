@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ec+nxeO8wHY=",
+  "dgSpecHash": "mR0Pep7a5Ek=",
   "success": true,
   "projectFilePath": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj",
   "expectedPackageFiles": [
@@ -12,8 +12,11 @@
     "C:\\Users\\mosqu\\.nuget\\packages\\microsoft.bcl.memory\\10.0.5\\microsoft.bcl.memory.10.0.5.nupkg.sha512",
     "C:\\Users\\mosqu\\.nuget\\packages\\microsoft.extensions.ai.abstractions\\10.4.1\\microsoft.extensions.ai.abstractions.10.4.1.nupkg.sha512",
     "C:\\Users\\mosqu\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512",
+    "C:\\Users\\mosqu\\.nuget\\packages\\openai\\2.10.0\\openai.2.10.0.nupkg.sha512",
+    "C:\\Users\\mosqu\\.nuget\\packages\\system.clientmodel\\1.10.0\\system.clientmodel.1.10.0.nupkg.sha512",
     "C:\\Users\\mosqu\\.nuget\\packages\\system.interactive.async\\7.0.0\\system.interactive.async.7.0.0.nupkg.sha512",
     "C:\\Users\\mosqu\\.nuget\\packages\\system.linq.async\\7.0.0\\system.linq.async.7.0.0.nupkg.sha512",
+    "C:\\Users\\mosqu\\.nuget\\packages\\system.memory.data\\10.0.3\\system.memory.data.10.0.3.nupkg.sha512",
     "C:\\Users\\mosqu\\.nuget\\packages\\system.numerics.tensors\\10.0.5\\system.numerics.tensors.10.0.5.nupkg.sha512"
   ],
   "logs": []

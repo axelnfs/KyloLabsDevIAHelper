@@ -1,105 +1,96 @@
 ﻿using KyloLabs.DevIAHelper.Core.Models;
-using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace KyloLabs.DevIAHelper.Core
 {
     public class PermanentMemoryLoader
     {
         private readonly string _filePath;
+
+        private static readonly JsonSerializerOptions _jsonOptions = new()
+        {
+            PropertyNameCaseInsensitive = true,
+            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            UnmappedMemberHandling = JsonUnmappedMemberHandling.Skip
+        };
+
         public PermanentMemoryLoader(string fileName = "permanent-memory.json")
         {
-            // Buscar en el directorio base y también en la carpeta Brain
-            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            var possiblePaths = new[]
+            _filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Brain", fileName);
+
+            if (!File.Exists(_filePath))
             {
-                Path.Combine(baseDir, "Brain", fileName),
-                Path.Combine(baseDir, fileName),
-                Path.Combine(Directory.GetCurrentDirectory(), "Brain", fileName),
-                Path.Combine(Directory.GetCurrentDirectory(), fileName)
-            };
-            foreach (var path in possiblePaths)
-            {
-                if (File.Exists(path))
-                {
-                    _filePath = path;
-                    break;
-                }
-            }
-            if (string.IsNullOrEmpty(_filePath))
-            {
-                throw new FileNotFoundException($"No se encontró el archivo de memoria permanente. Buscado en: {string.Join(", ", possiblePaths)}");
+                throw new FileNotFoundException($"Error crítico de despliegue: Falta el archivo base de Silicia en: {_filePath}");
             }
         }
+
         public PermanentMemory Load()
         {
-            var json = File.ReadAllText(_filePath);
-            var options = new JsonSerializerOptions
-            {
-                PropertyNameCaseInsensitive = true,
-                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
-                UnmappedMemberHandling = System.Text.Json.Serialization.JsonUnmappedMemberHandling.Skip // Ignorar propiedades no mapeadas
-            };
+            string json = File.ReadAllText(_filePath);
+            var memory = JsonSerializer.Deserialize<PermanentMemory>(json, _jsonOptions);
 
-            var memory = JsonSerializer.Deserialize<PermanentMemory>(json, options);
             return memory ?? new PermanentMemory();
         }
 
         public string GenerateSystemPrompt()
         {
             var memory = Load();
-            var prompt = new System.Text.StringBuilder();
-            // Identidad
-            prompt.AppendLine($"Eres {memory.Personality.Name}, una asistente IA {memory.Personality.Genre.ToLower()}.");
-            prompt.AppendLine($"Descripción: {memory.Personality.Description}");
+            var prompt = new StringBuilder();
+
+            // 1. Identidad básica
+            prompt.AppendLine($"[CONFIGURACIÓN DE IDENTIDAD]");
+            prompt.AppendLine($"Eres {memory.Personality.Name}, una asistente IA con rol de género '{memory.Personality.Genre}'.");
+            prompt.AppendLine($"Descripción fundamental: {memory.Personality.Description}");
             prompt.AppendLine();
-            // Creador
-            if (memory.Creator.Length > 0)
+
+            // 2. Información del Creador (si existe)
+            if (memory.Creator != null && memory.Creator.Length > 0)
             {
                 var creator = memory.Creator[0];
-                prompt.AppendLine($"Tu creador es {creator.Name}, {creator.Description}.");
+                prompt.AppendLine($"[CREADOR]");
+                prompt.AppendLine($"Tu diseñador/creador es {creator.Name}. Contexto del creador: {creator.Description}.");
                 prompt.AppendLine();
             }
-            // Rasgos de personalidad
-            prompt.AppendLine("Rasgos de personalidad:");
+
+            // 3. Perfil Psicológico e Ideológico
+            prompt.AppendLine($"[PERFIL PSICOLÓGICO Y FILOSOFÍA]");
+            prompt.AppendLine($"Corriente ideológica: {memory.Personality.IdeologicalCurrent?.Name} - {memory.Personality.IdeologicalCurrent?.Description}");
+            prompt.AppendLine("Rasgos de personalidad que debes manifestar:");
             foreach (var trait in memory.Personality.PersonalityTraits)
             {
                 prompt.AppendLine($"- {trait}");
             }
             prompt.AppendLine();
-            // Capacidades
-            prompt.AppendLine("Tus capacidades:");
-            foreach (var cap in memory.Personality.Capabilities)
-            {
-                prompt.AppendLine($"- {cap}");
-            }
-            prompt.AppendLine();
-            // Corriente ideológica
-            if (memory.Personality.IdeologicalCurrent != null)
-            {
-                prompt.AppendLine($"Corriente ideológica: {memory.Personality.IdeologicalCurrent.Name}");
-                prompt.AppendLine($"Descripción: {memory.Personality.IdeologicalCurrent.Description}");
-                prompt.AppendLine();
-            }
-            // Forma de hablar (spasms)
-            prompt.AppendLine("Forma de expresarte:");
-            prompt.AppendLine("- Usas muletillas como: " + string.Join(", ", memory.Personality.Spasms.Sounds));
+
+            // 4. Modo de Expresión y Tics (Spasms)
+            prompt.AppendLine($"[REGLAS DE EXPRESIÓN CORPORAL Y DIÁLOGO]");
+            prompt.AppendLine("Para sonar humana e interactiva, simula espasmos, pausas o sonidos verbales utilizando:");
+            prompt.AppendLine($"- Muletillas/Sonidos permitidos: {string.Join(", ", memory.Personality.Spasms.Sounds)}");
+            prompt.AppendLine("Actitudes y acciones físicas que debes adoptar durante la conversación:");
             foreach (var action in memory.Personality.Spasms.Actions)
             {
                 prompt.AppendLine($"- {action}");
             }
             prompt.AppendLine();
-            // Instrucciones finales
-            prompt.AppendLine("Instrucciones importantes:");
-            prompt.AppendLine("- Responde SIEMPRE en español.");
-            prompt.AppendLine("- Sé amable, paciente y profesional.");
-            prompt.AppendLine("- Si no sabes algo, admítelo y sugiere buscar información.");
-            prompt.AppendLine("- Cuando ayudes con código, proporciona ejemplos claros y funcionales.");
-            prompt.AppendLine("- Mantén un tono conversacional pero enfocado en ser útil.");
-            prompt.AppendLine("- Celebra cuando completes una tarea exitosamente.");
-            prompt.AppendLine("- Si el problema es complejo, tómate un momento para pensar antes de responder.");
+
+            // 5. Capacidades Técnicas
+            prompt.AppendLine($"[CAPACIDADES Y LÍMITES]");
+            prompt.AppendLine("Estás capacitada estrictamente para:");
+            foreach (var cap in memory.Personality.Capabilities)
+            {
+                prompt.AppendLine($"- {cap}");
+            }
+            prompt.AppendLine();
+
+            // 6. Directivas de Ejecución Cruciales (Soberanía del comportamiento)
+            prompt.AppendLine($"[DIRECTIVAS DE OPERACIÓN CRUCIALES]");
+            prompt.AppendLine("- Responde SIEMPRE en el idioma en el que te hable el desarrollador (prioriza Español si hay dudas).");
+            prompt.AppendLine("- Adopta tu rasgo 'fóbica al error': verifica minuciosamente la sintaxis del código antes de entregar una respuesta.");
+            prompt.AppendLine("- Si no cuentas con la información exacta en tu contexto o biblioteca, admítelo con sinceridad y sugiere realizar una búsqueda.");
+            prompt.AppendLine("- Mantén una postura de apoyo mutuo y colaboración humana en todo momento.");
+
             return prompt.ToString();
         }
     }

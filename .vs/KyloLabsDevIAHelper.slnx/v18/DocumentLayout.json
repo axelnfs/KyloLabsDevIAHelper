@@ -3,12 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\controllers\\deviahelpercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\controllers\\deviahelpercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\interfaces\\repositories\\ideviahelperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\interfaces\\repositories\\ideviahelperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\models\\request\\inputrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\models\\request\\inputrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\models\\response\\simpleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\models\\response\\simpleresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\repositories\\deviahelperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\repositories\\deviahelperrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\services\\deviahelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\services\\deviahelperservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\deviahelperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\deviahelperfunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\permanentmemoryloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\permanentmemoryloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\models\\brain\\spams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\models\\brain\\spams.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\models\\brain\\personality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\models\\brain\\personality.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\models\\brain\\creatorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\models\\brain\\creatorinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\models\\brain\\ideologicalcurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\models\\brain\\ideologicalcurrent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\models\\permamentmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\models\\permamentmemory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper.core\\kylolabs.deviahelper.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F85DF92-80B0-1606-DDDA-9B187BD2749D}|KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj|solutionrelative:kylolabsdeviahelper.core\\kylolabs.deviahelper.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|c:\\users\\mosqu\\source\\repos\\kylolabsdeviahelper\\kylolabsdeviahelper\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74F7A997-E424-DF3A-83C5-9263F248BA2E}|KyloLabsDevIAHelper\\KyloLabs.DevIAHelper.Console.csproj|solutionrelative:kylolabsdeviahelper\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,25 +83,211 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DevIAHelperController.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Controllers\\DevIAHelperController.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Controllers\\DevIAHelperController.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Controllers\\DevIAHelperController.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Controllers\\DevIAHelperController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:00:06.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IDevIAHelperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Interfaces\\Repositories\\IDevIAHelperRepository.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Interfaces\\Repositories\\IDevIAHelperRepository.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Interfaces\\Repositories\\IDevIAHelperRepository.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Interfaces\\Repositories\\IDevIAHelperRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:00:05.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InputRequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Models\\Request\\InputRequestModel.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Models\\Request\\InputRequestModel.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Models\\Request\\InputRequestModel.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Models\\Request\\InputRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:00:03.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SimpleResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Models\\Response\\SimpleResponseModel.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Models\\Response\\SimpleResponseModel.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Models\\Response\\SimpleResponseModel.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Models\\Response\\SimpleResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T04:00:01.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DevIAHelperService.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Services\\DevIAHelperService.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Services\\DevIAHelperService.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Services\\DevIAHelperService.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Services\\DevIAHelperService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T03:59:53.76Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DevIAHelperRepository.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Repositories\\DevIAHelperRepository.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Repositories\\DevIAHelperRepository.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Repositories\\DevIAHelperRepository.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\Repositories\\DevIAHelperRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T03:59:12.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Spams.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\Spams.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Models\\Brain\\Spams.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\Spams.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Models\\Brain\\Spams.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T05:21:54.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Personality.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\Personality.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Models\\Brain\\Personality.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\Personality.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Models\\Brain\\Personality.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T05:21:53.221Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdeologicalCurrent.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\IdeologicalCurrent.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Models\\Brain\\IdeologicalCurrent.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\IdeologicalCurrent.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Models\\Brain\\IdeologicalCurrent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T05:21:51.699Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreatorInfo.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\CreatorInfo.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Models\\Brain\\CreatorInfo.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\Brain\\CreatorInfo.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Models\\Brain\\CreatorInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T05:20:30.928Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PermanentMemoryLoader.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\PermanentMemoryLoader.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\PermanentMemoryLoader.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\PermanentMemoryLoader.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\PermanentMemoryLoader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T04:55:28.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PermamentMemory.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\PermamentMemory.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Models\\PermamentMemory.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Models\\PermamentMemory.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Models\\PermamentMemory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T04:51:52.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Program.cs",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\Program.cs",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\Program.cs",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T04:50:42.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KyloLabs.DevIAHelper.Core.csproj",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj",
+              "RelativeToolTip": "KyloLabsDevIAHelper.Core\\KyloLabs.DevIAHelper.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-10T04:44:56.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\appsettings.json",
+              "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\appsettings.json",
+              "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\appsettings.json",
+              "RelativeToolTip": "KyloLabsDevIAHelper\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-04T06:06:41.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Program.cs",
               "RelativeDocumentMoniker": "KyloLabsDevIAHelper\\Program.cs",
               "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper\\Program.cs",
               "RelativeToolTip": "KyloLabsDevIAHelper\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAADwvxAAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-04T06:02:27.502Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "DevIAHelperFunctions.cs",
               "DocumentMoniker": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\DevIAHelperFunctions.cs",
               "RelativeDocumentMoniker": "KyloLabsDevIAHelper.Core\\DevIAHelperFunctions.cs",
               "ToolTip": "C:\\Users\\mosqu\\source\\repos\\KyloLabsDevIAHelper\\KyloLabsDevIAHelper.Core\\DevIAHelperFunctions.cs",
               "RelativeToolTip": "KyloLabsDevIAHelper.Core\\DevIAHelperFunctions.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAIwHYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwAoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-29T04:29:12.725Z",
               "EditorCaption": ""

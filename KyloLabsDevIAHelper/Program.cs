@@ -3,7 +3,6 @@ using KyloLabs.DevIAHelper.Console.Interfaces.Services;
 using KyloLabs.DevIAHelper.Console.Repositories;
 using KyloLabs.DevIAHelper.Console.Services;
 using KyloLabs.DevIAHelper.Core;
-using KyloLabs.DevIAHelper.Core.Models.Nvidia;
 
 var builder = WebApplication.CreateBuilder(args);
 
